@@ -1,4 +1,4 @@
-class Shape {
+class Shape {                                    //Super class
     public void draw() {
         System.out.println("Drawing a shape"); //declared a function
     }
