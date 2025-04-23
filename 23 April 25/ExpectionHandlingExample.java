@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class ExpectionHandlingExample {
@@ -16,9 +17,15 @@ public class ExpectionHandlingExample {
             System.out.println("Result: " + result);
 
         } catch (ArithmeticException e) {
-            System.out.println("Error: Cant divide by zero");
+            //Catch block handles the exception
+            System.err.println("Error: Cant divide by zero");
         } catch (Exception e) {
+            //This catches any other exception
             System.out.println("An unexpected error occured: " + e.getMessage());
+        } finally {
+            //This block always execute
+            System.out.println("Execution Complete");
+            scanner.close();
         }
     }
 }
